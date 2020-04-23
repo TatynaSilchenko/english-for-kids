@@ -1,0 +1,107 @@
+.mainWrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 15px;
+    max-width: 1440px;
+    margin: auto;
+    padding-top: 55px;
+}
+.mainCards{
+    width: 300px;
+    height: 280px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    color: #212529;
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+    background: -webkit-gradient(linear,left top,left bottom,from(#fd128d),color-stop(40%, #fe83cf),color-stop(40%,#fff),to(#fff));
+    background: linear-gradient(180deg, #fd128d, #fe83cf 40%,#fff 0,#fff);
+    margin: 20px 25px;
+    cursor: pointer;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+.mainCards img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 10px solid #fff;
+    object-fit: cover;
+    margin: 30px auto;
+}
+.navWrapper, .navWrapper input{
+    display: block;
+    position: absolute;
+
+}
+.navWrapper{
+    top: 11px;
+    left: 0;
+    z-index: 3;
+    user-select: none;
+}
+.navWrapper input {
+    width: 40px;
+    height: 32px;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+}
+
+.navWrapper span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    opacity: 1;
+    transform: rotate(45deg) translate(27px,-1px);
+    background: #cdcdcd;
+}
+.navWrapper span:nth-last-child(3) {
+    opacity: 0;
+    -webkit-transform: rotate(0deg) scale(.2);
+    transform: rotate(0deg) scale(.2);
+}
+.navWrapper span:nth-last-child(2) {
+    opacity: 1;
+    -webkit-transform: rotate(-45deg) translate(12px,14px);
+    transform: rotate(-45deg) translate(12px,14px);
+}
+
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+
+    width: 380px;
+    height: calc(100vh + 20px);
+    margin: -100px 0 0;
+    padding: 125px 50px 50px;
+    left: calc(675px - 50vw);
+    background: linear-gradient(40deg, #fd128d, #fe83cf);
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0 0;
+    transition: -webkit-transform .5s cubic-bezier(.77,.2,.05,1);
+
+}
+.hidderItem{
+    padding: 10px 0;
+    font-size: 22px;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 0 0 0 60px;
+    color: #fff;
+    min-width: 145px;
+    text-align: left;
+}
