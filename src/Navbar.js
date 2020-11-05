@@ -23,10 +23,12 @@ const Navbar=(props)=>{
     return <div className={s.navWrapper}>
         {(props.isToggleMenu)&&
             <>
-        < input type="checkbox" onClick={viewToggle}/>
+                <div onClick={viewToggle}>
+        < input type="checkbox" />
             <span></span>
             <span></span>
             <span></span>
+                </div>
             <ul className={s.menu}>
             <NavLink  className={s.hidderItem} to={'/'}>Main Page</NavLink>
             <NavLink className={s.hidderItem} to={PATH_ANIMALS}>Animals</NavLink>
