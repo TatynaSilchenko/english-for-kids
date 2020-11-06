@@ -22,9 +22,9 @@ const initialState={
         {mainTitle:"Animals", mainImage:animals,
             cards:[
                 {image:cat,title:"Cat"},
-                {image:dog,title:"dog"},
-                {image:lion,title:"lion"},
-                {image:pig,title:"pig"},
+                {image:dog,title:"Dog"},
+                {image:lion,title:"Lion"},
+                {image:pig,title:"Pig"},
             ]},
         {mainTitle:"Fruits", mainImage:fruits,
             cards:[

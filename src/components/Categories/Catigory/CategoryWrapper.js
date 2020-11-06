@@ -1,8 +1,9 @@
-import s from "../Categories.module.css";
+import s from "./Category.module.css";
 import React from "react";
-import {withRouter} from "react-router-dom";
+import {NavLink, withRouter} from "react-router-dom";
 import Card from "../Catigory/Card";
 import {useSelector} from "react-redux";
+import Button from "../../../helpers/Button";
 
 const CategoryWrapper = (props) => {
 
@@ -15,6 +16,7 @@ const CategoryWrapper = (props) => {
 
     return <div className={s.categoryWrapper}>
         {cards.map(c => <Card image={c["image"]} title={c["title"]}/>)}
+        <Button path="/categories" title="Back"/>
     </div>
 }
 

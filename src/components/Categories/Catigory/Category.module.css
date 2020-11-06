@@ -1,13 +1,12 @@
-
-.mainWrapper{
+.categoryWrapper{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 15px;
+    max-width: 1440px;
+    margin: auto;
 }
-.avatar{
-    padding-bottom: 20px;
-}
-.startBtn{
+.toMainPageBtn{
     margin: 0 auto;
     font-size: 24px;
     text-align: center;
@@ -21,7 +20,7 @@
     transition: .15s;
     box-shadow: 0 0 0 1px rgba(255,255,255,.1), 0 2px 4px 0 rgba(14,30,37,.12);
 }
-.startBtn a{
+.toMainPageBtn a{
     text-decoration: none;
     color:white;
 }

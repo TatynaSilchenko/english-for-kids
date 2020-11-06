@@ -1,14 +1,12 @@
 import React from "react";
 import avatar from "../../assets/avatar.jpg"
 import s from "./Main.module.css"
-import {NavLink} from "react-router-dom";
+import Button from "../../helpers/Button";
 
 const MainPage = () => {
     return <div className={s.mainWrapper}>
         <img className={s.avatar} src={avatar}/>
-        <button className={s.startBtn}>
-        <NavLink to="/categories">Start</NavLink>
-        </button>
+        <Button path="/categories" title="Start"/>
     </div>
 }
 export default MainPage;

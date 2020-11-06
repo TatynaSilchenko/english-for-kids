@@ -31,5 +31,4 @@ const MainApp = () => {
         </BrowserRouter>
     </Provider>
 }
-
 export default MainApp;
